@@ -34,7 +34,7 @@ const Experience = () => {
                         {entry.organization}
                       </p>
                     </div>
-                    <span className="font-mono text-[0.68rem] tracking-wide uppercase px-2.5 py-1 rounded-sm bg-bg border border-border text-slate shrink-0">
+                    <span className="font-mono text-[0.68rem] tracking-wide uppercase px-2.5 py-1 rounded-sm bg-bg border border-border  shrink-0">
                       {entry.type}
                     </span>
                   </div>
