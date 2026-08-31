@@ -44,7 +44,7 @@ const Hero = () => {
               View My Work
               <ArrowDown size={16} />
             </a>
-            <a href="/resume.pdf" download className="btn-secondary">
+            <a href="/SALIMBAGO_RESUME_FINAL.pdf" download className="btn-secondary">
               Download Resume
               <Download size={16} />
             </a>
@@ -75,7 +75,7 @@ const Hero = () => {
             </div>
             <div className="absolute -bottom-5 -left-5 hidden sm:flex items-center gap-2 rounded-sm border border-border bg-surface px-4 py-2.5 shadow-[0_12px_28px_-16px_rgba(15,23,42,0.3)]">
               <span className="h-2 w-2 rounded-full bg-accent" />
-              <span className="font-mono text-xs text-slate">
+              <span className="font-mono text-xs ">
                 status: open_to_work
               </span>
             </div>
