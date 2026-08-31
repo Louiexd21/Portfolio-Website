@@ -5,7 +5,7 @@ export const experience: ExperienceEntry[] = [
     id: "IT Intern",
     role: "IT Intern",
     organization: "Tecson-Dulalia Medical Health Services Inc.",
-    type: "Intern",
+    type: "Internship",
     date: "March 2026 — May 2026",
     location: "Dasmariñas, Cavite",
     description:
