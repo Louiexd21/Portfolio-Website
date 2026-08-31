@@ -1,0 +1,161 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* Enables the `dark:` variant, toggled by adding/removing .dark on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Fixed brand ink — used for intentionally-dark chips, footer, contact
+     section backgrounds. Does not change between themes. */
+  --color-navy: #0f172a;
+  --color-slate: #1e293b;
+
+  /* Theme-aware tokens — overridden below for dark mode */
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-heading: #0f172a;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-border: #cbd5e1;
+
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+
+  --btn-bg-color: #0f172a;
+  --btn-color: #ffffff;
+
+  --breakpoint-xs: 420px;
+}
+
+/* Dark theme overrides. Because these come after @theme in the cascade and
+   target the same root element (<html class="dark">), they win over the
+   light-mode defaults above for any element that inherits the variable. */
+.dark {
+  --color-bg: #0b1220;
+  --color-surface: #111827;
+  --color-heading: #f8fafc;
+  --color-text-primary: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  --color-border: #253045;
+
+  --color-accent: #3b82f6;
+  --color-accent-hover: #60a5fa;
+
+  --btn-bg-color: #111827;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full  px-6 sm:px-8 lg:px-20;
+  }
+
+  .section-eyebrow {
+    @apply font-mono text-xs tracking-[0.18em] uppercase text-accent inline-flex items-center gap-2;
+  }
+
+  .section-eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 1px;
+    background-color: var(--color-accent);
+  }
+
+  .section-heading {
+    @apply font-display text-3xl sm:text-4xl font-bold text-heading mt-3;
+  }
+
+  .section-sub {
+    @apply text-text-secondary text-base sm:text-lg mt-4 max-w-2xl leading-relaxed;
+  }
+
+  .card {
+    @apply bg-surface border border-border rounded-md transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:border-accent/40 hover:shadow-[0_8px_24px_-12px_rgba(15,23,42,0.18)] hover:-translate-y-0.5;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold transition-all text-white duration-200 font-body hover:bg-accent-hover;
+    background-color: var(--btn-bg-color);
+    border: 1px solid var(--color-border);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold transition-all duration-200 font-body bg-transparent text-heading border border-border hover:border-accent;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-sm border border-border bg-surface px-3 py-1.5 text-sm text-text-primary font-medium transition-colors duration-300;
+  }
+
+  .nav-link {
+    @apply relative text-sm font-medium text-text-secondary transition-colors duration-200 hover:text-accent;
+  }
+
+  .fade-up {
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
