@@ -14,7 +14,6 @@ export const education: EducationEntry[] = [
     graduationYear: "2026",
     achievements: [
       "Graduated with Latin Honors",
-      "Capstone project selected for departmental showcase",
     ],
     coursework: [
       "Data Structures & Algorithms",

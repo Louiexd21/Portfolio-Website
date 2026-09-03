@@ -76,7 +76,7 @@ const Hero = () => {
             <div className="absolute -bottom-5 -left-5 hidden sm:flex items-center gap-2 rounded-sm border border-border bg-surface px-4 py-2.5 shadow-[0_12px_28px_-16px_rgba(15,23,42,0.3)]">
               <span className="h-2 w-2 rounded-full bg-accent" />
               <span className="font-mono text-xs ">
-                status: open_to_work
+                status: Open to Work
               </span>
             </div>
           </div>

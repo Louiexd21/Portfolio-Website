@@ -25,7 +25,7 @@ const About = () => {
               Trece Martires City, Cavite, focused on building web
               applications that are as reliable under the hood as they are
               pleasant to use. My work sits at the intersection of frontend
-              craft and backend logic — I care about how an interface feels,
+              craft and backend logic. I care about how an interface feels,
               and equally about whether the data behind it is modeled
               correctly.
             </p>
@@ -37,15 +37,15 @@ const About = () => {
               approach every project.
             </p>
             <p>
-              I try to write code the way I'd want to inherit it — typed,
+              I try to write code the way I'd want to inherit it. typed,
               organized, and easy to reason about. Given a choice between a
               clever shortcut and a clear structure, I'll take the clear
               structure almost every time.
             </p>
             <p>
               Outside of coursework, I enjoy building small tools that solve
-              real, local problems — like a civic information site for my
-              community — and contributing to student-led tech initiatives on
+              real, local problems like a civic information site for my
+              community and contributing to student-led tech initiatives on
               campus.
             </p>
           </div>

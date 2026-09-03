@@ -18,7 +18,7 @@ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const contactLinks = [
   { icon: Mail, label: "Email", value: "salimbagojanlouie02@gmail.com", href: "mailto:salimbagojanlouie02@gmail.com" },
-  { icon: LinkedinIcon, label: "LinkedIn", value: "linkedin.com/in/jan-louie-salimbago-895290313", href: "linkedin.com/in/jan-louie-salimbago-895290313" },
+  { icon: LinkedinIcon, label: "LinkedIn", value: "linkedin.com/in/jan-louie-salimbago-895290313", href: "https://linkedin.com/in/jan-louie-salimbago-895290313" },
   { icon: GithubIcon, label: "GitHub", value: "github.com/Louiexd21", href: "https://github.com/Louiexd21" },
   { icon: MapPin, label: "Location", value: "Trece Martires City, Cavite, PH", href: undefined },
 ];

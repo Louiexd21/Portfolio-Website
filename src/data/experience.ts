@@ -16,6 +16,6 @@ export const experience: ExperienceEntry[] = [
       "Registered patients for PhilHealth YAKAP services and assisted with registration concerns, ensuring proper and timely processing",
       "Processed PhilHealth documents and forms, ensuring complete and organized documentation.",
     ],
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
+    technologies: [],
   },
 ];
