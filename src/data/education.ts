@@ -3,6 +3,7 @@ import webDevCert from "../assets/images/DICT_WEB_DEV1_CERTIFICATE.png"
 import certInternship from "../assets/images/Certificate of completion.jpg"
 import certOfRecognition from "../assets/images/cert_of_recognition.png"
 import certOfReact from "../assets/images/reactCert.png"
+import certPromptLikeEngineer from "../assets/images/prompt_like_an_engineer.png"
 
 export const education: EducationEntry[] = [
   {
@@ -38,7 +39,7 @@ export const certifications: Certification[] = [
     id: "cert-2",
     title: "Certificate of Intern Completion",
     issuer: "Tecson-Dulalia Medical Services Inc.",
-    date: "2024",
+    date: "May 2026",
     type: "Certification",
     image: certInternship,
   },
@@ -52,6 +53,14 @@ export const certifications: Certification[] = [
   },
   {
     id: "cert-4",
+    title: "Prompt Like an Engineer Certificate",
+    issuer: "DICT-ITU DTC Initiative through the Cisco Networking Academy program",
+    date: "September 2026",
+    type: "Certification",
+    image: certPromptLikeEngineer,
+  },
+  {
+    id: "cert-5",
     title: "President's List Recognition",
     issuer: "Cavite State University – Trece Martires City Campus",
     date: "2024 — 2025",
