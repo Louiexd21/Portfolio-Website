@@ -29,14 +29,12 @@ const Hero = () => {
           </h1>
 
           <p className="mt-3 font-mono text-sm sm:text-base text-accent">
-            Information Technology Fresh Gradute &amp; Web Developer
+            Information Technology Fresh Gradute | Web Developer | Technical Support
           </p>
 
           <p className="section-sub">
-            I build modern, reliable, and user-focused digital experiences
-            using React, TypeScript, and modern web technologies — with a
-            focus on clean architecture, performance, and thoughtful detail
-            from first line of code to final deploy.
+            I build modern, reliable, and user-focused digital experiences and provides technical support and troubleshooting solutions. With experience in React, TypeScript, and modern web technologies, I focus on solving technical problems and delivering reliable, high-quality solutions.
+
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
