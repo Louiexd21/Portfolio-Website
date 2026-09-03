@@ -1,6 +1,6 @@
 import { Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "../icons/BrandIcons";
-import logo from '../assets/images/louie_logo.png'
+
 
 const socials = [
   { icon: GithubIcon, label: "GitHub", href: "https://github.com/Louiexd21" },
